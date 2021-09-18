@@ -25,7 +25,7 @@ public class HomeWorkApp {
         }else{
             System.out.println("Сумма отрицательная");
         }
-//        scanner.close();
+//        scanner.close(); - Если кусками вызывать метод.
     }
     public static void printColor(){
         int value;
@@ -52,7 +52,6 @@ public class HomeWorkApp {
         }
         else{
             System.out.println("a<b");
-            
         }
     }
 }
