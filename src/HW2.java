@@ -1,11 +1,11 @@
 public class HW2 {
     public static void main(String[] args) {
-        System.out.println(checkSUM(10, 5));
+        System.out.println(checkSUM(10, 3));
         sdd(-23);
-        System.out.println(PrN(5));
-        text("ТУТ должна быть ваша реклама", 10);
-        test(2024);
-        System.out.println(ye(2024));
+        System.out.println(prn(0));
+        text("ТУТ должна быть ваша реклама", 2);
+        test(400);
+        System.out.println(ye(400));
     }
 
     public static boolean checkSUM(int a, int b) {
@@ -20,15 +20,14 @@ public class HW2 {
         }
     }
 
-    public static boolean PrN(int x) {
-        return (x >= 0);
+    public static boolean prn(int x) {
+        return (x < 0);
     }
 
-    public static String text(String word, int timer) {
+    public static void text(String word, int timer) {
         for (int n = 0; n < timer; n++) {
-            System.out.println(word);
+           System.out.println(word);
         }
-        return word;
     }
 // На этом методе отрабатывал условие...
    public static void test(int x) {
