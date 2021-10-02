@@ -157,8 +157,8 @@ public class Game {
 //            playerHP -= enemyAttack; это тут больше не нужно
 //            enemyHP -= playerAttack;
             fight(enemyHP); // Вызов метода боя.
-            System.out.println("ALERT! Enemy give damage " + enemyAttack*countHit + ". Player HP now is " + playerHP + " ENEMY Killed");
             countEnemies--;
+            System.out.println("ALERT! Enemy give damage " + enemyAttack*countHit + ". Player HP now is " + playerHP + " This enemy killed. ENEMY's Left " + countEnemies);
             invisibleRoom[nextPosY][nextPosX] = emptyCell;
             countHit=0;
         }
